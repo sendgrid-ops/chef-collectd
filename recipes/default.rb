@@ -94,6 +94,11 @@ template "/etc/init.d/collectd" do
   notifies :restart, "service[collectd]"
 end
 
+directory "#{node["collectd"]["dir"]}/etc" do
+  action :create
+  recurse :true
+end
+
 template "#{node["collectd"]["dir"]}/etc/collectd.conf" do
   mode "0644"
   source "collectd.conf.erb"
