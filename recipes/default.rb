@@ -66,7 +66,7 @@ end
 bash "install-collectd" do
   cwd Chef::Config[:file_cache_path]
   code <<-EOH
-    tar -xzf collectd-#{node["collectd"]["version"]}.tar.gz
+    gzip -dc collectd-#{node["collectd"]["version"]}.tar.gz | tar -xf - 
     (cd collectd-#{node["collectd"]["version"]} && ./configure --prefix=#{node["collectd"]["dir"]} && make && make install)
   EOH
   action :nothing
