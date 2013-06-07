@@ -96,7 +96,7 @@ end
 
 directory "#{node["collectd"]["dir"]}/etc" do
   action :create
-  recurse :true
+  recursive :true
 end
 
 template "#{node["collectd"]["dir"]}/etc/collectd.conf" do
