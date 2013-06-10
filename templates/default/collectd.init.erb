@@ -29,11 +29,11 @@ NAME=collectd
 DAEMON=<%= @dir %>/sbin/collectd
 
 CONFIGFILE=<%= @dir %>/etc/collectd.conf
-PIDFILE=/run/collectd.pid
+PIDFILE=/var/run/collectd.pid
 
 USE_COLLECTDMON=1
 COLLECTDMON_DAEMON=<%= @dir %>/sbin/collectdmon
-COLLECTDMON_PIDFILE=/run/collectdmon.pid
+COLLECTDMON_PIDFILE=/var/run/collectdmon.pid
 
 MAXWAIT=30
 
