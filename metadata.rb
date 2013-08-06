@@ -8,8 +8,9 @@ recipe            "collectd", "Installs and configures collectd"
 recipe            "collectd::attribute_driven", "Installs collectd plugins via node attributes"
 recipe            "collectd::packages", "Installs collectd via packages"
 recipe            "collectd::recompile", "Attempts to recompile collectd"
+recipe            "collectd::logrotate", "sets up logrotation for collectd logfiles"
 
-%w{ build-essential yum }.each do |d|
+%w{ build-essential logrotate yum }.each do |d|
   depends d
 end
 
