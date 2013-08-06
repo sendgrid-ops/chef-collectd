@@ -122,3 +122,6 @@ service "collectd" do
   supports :status => true, :restart => true
   action [ :enable, :start ]
 end
+
+include_recipe "logrotate"
+include_recipe "collectd::logrotate"
