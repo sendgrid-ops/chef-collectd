@@ -6,10 +6,10 @@ provisioner:
   name: chef_solo
 
 platforms:
-- name: sendgrid_centos-6_chef-11.8.2
+- name: sendgrid_centos-6.5_chef-11.10.4_1395086387
   driver_config:
-    box: sendgrid_centos-6_chef-11.8.2
-    box_url: http://repo.sjc1.sendgrid.net/images/virtualbox/sendgrid_centos-6_chef-11.8.2.box
+    box: sendgrid_centos-6.5_chef-11.10.4_1395086387
+    box_url: http://repo.sjc1.sendgrid.net/images/virtualbox/sendgrid_centos-6.5_chef-11.10.4_1395086387.box
 
 suites:
 - name: default
