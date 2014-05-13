@@ -15,5 +15,5 @@ recipe            "collectd::logrotate", "sets up logrotation for collectd logfi
 end
 
 %w{ amazon centos fedora redhat scientific ubuntu }.each do |os|
-    supports os
+  supports os
 end

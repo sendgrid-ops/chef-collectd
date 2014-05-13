@@ -1,5 +1,5 @@
 service "collectd" do
-  action [ :disable, :stop ]
+  action [:disable, :stop]
 end
 
 execute "remove_collectd" do
