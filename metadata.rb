@@ -10,9 +10,11 @@ recipe            "collectd::packages", "Installs collectd via packages"
 recipe            "collectd::recompile", "Attempts to recompile collectd"
 recipe            "collectd::logrotate", "sets up logrotation for collectd logfiles"
 
-%w{ build-essential logrotate yum }.each do |d|
-  depends d
-end
+depends           'build-essential'
+depends           'logrotate'
+depends           'apt', '~> 2.2'
+depends           'yum', '~> 3.1'
+depends           'yum-epel', '~> 0.3'
 
 %w{ amazon centos fedora redhat scientific ubuntu }.each do |os|
   supports os
