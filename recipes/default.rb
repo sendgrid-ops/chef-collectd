@@ -79,7 +79,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/collectd-#{node["collectd"]["vers
   source node["collectd"]["url"]
   checksum node["collectd"]["checksum"]
   notifies :run, "bash[install-collectd]", :immediately
-  action :create_if_missing
 end
 
 template "/etc/init.d/collectd" do
