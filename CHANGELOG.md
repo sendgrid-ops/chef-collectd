@@ -1,3 +1,12 @@
+## v0.2.3:
+* Fixed remote file to point at SG repo (so the file is still available)
+* Fixed remote file checksum to be correct
+* Fixed remote_file resource usage to just use create, let checksum handle
+update or not.
+
+## v0.2.2:
+__MISSING__
+
 ## v0.2.1:
 * Fixed `write_graphite` plugin issues when overriding `Host` via attributes.
 
