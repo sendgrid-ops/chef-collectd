@@ -8,8 +8,8 @@ provisioner:
 platforms:
 - name: centos-6_chef-11
   driver_config:
-    box: sendgrid_centos-6.5_chef-11.12.4
-    box_url: http://repo.sjc1.sendgrid.net/images/vagrant/sendgrid_centos-6.5_chef-11.12.4.box
+    box: sendgrid_centos-6_chef-11
+    box_url: http://repo.sjc1.sendgrid.net/images/vagrant/metadata/sendgrid_centos-6_chef-11.json
 
 suites:
 - name: default
