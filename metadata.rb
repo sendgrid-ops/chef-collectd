@@ -3,7 +3,7 @@ maintainer        "Hector Castro"
 maintainer_email  "hectcastro@gmail.com"
 license           "Apache 2.0"
 description       "Installs and configures collectd."
-version           IO.read(File.join(File.dirname(__FILE__), 'version_wf')) || "testing" || "testing"
+version           IO.read(File.join(File.dirname(__FILE__), 'version_wf')) || "testing"
 
 recipe            "collectd", "Installs and configures collectd"
 recipe            "collectd::attribute_driven", "Installs collectd plugins via node attributes"
