@@ -26,4 +26,3 @@ depends           'yum-epel', '~> 0.3'
 %w{ amazon centos fedora redhat scientific ubuntu }.each do |os|
   supports os
 end
-
